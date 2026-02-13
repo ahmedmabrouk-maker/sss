@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation Screen Mock</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background: #f0f2f5; padding: 40px; font-family: system-ui, -apple-system, sans-serif; }
+        .submission-container { max-width: 900px; margin: 0 auto; }
+        :root { --ast-global-color-0: #007bff; --ast-global-color-3: #333; }
+        /* Mock dashicons since they aren't loaded */
+        .dashicons { font-family: sans-serif !important; }
+        .dashicons-id-alt::before { content: "🆔"; }
+        .dashicons-edit::before { content: "📝"; }
+    </style>
+</head>
+<body>
+    <div class="services-container">
+        <div class="submission-container">
+            <div class="form-header">
+                <h2>طلب إصدار رخصة جديدة</h2>
+                <button class="button secondary">رجوع</button>
+            </div>
+            <div class="professional-confirmation">
+                <div class="confirmation-header-area">
+                    <h3><span class="dashicons dashicons-id-alt"></span> استكمال بيانات الطلب</h3>
+                    <p>يرجى استكمال الحقول التالية (إن وجدت) والموافقة على الشروط لإرسال طلبكم.</p>
+                </div>
+                
+                <div id="custom-fields-container" style="margin-bottom: 30px;">
+                    <div class="custom-field-item" style="margin-bottom:20px;">
+                        <label style="display:block; font-weight:bold; margin-bottom:8px;">عنوان الشكوى:</label>
+                        <input type="text" style="width:100%; padding:12px; border:1px solid #e2e8f0; border-radius:8px;" placeholder="أدخل عنوان الشكوى هنا..." value="تأخر في إصدار البطاقة">
+                    </div>
+                    <div class="custom-field-item" style="margin-bottom:20px;">
+                        <label style="display:block; font-weight:bold; margin-bottom:8px;">تفاصيل الشكوى:</label>
+                        <textarea style="width:100%; padding:12px; border:1px solid #e2e8f0; border-radius:8px;" rows="4" placeholder="أدخل تفاصيل الشكوى هنا...">لقد قمت بالتقديم منذ أكثر من شهر ولم تصلني البطاقة حتى الآن.</textarea>
+                    </div>
+                    <div class="custom-field-item" style="margin-bottom:20px;">
+                        <label style="display:block; font-weight:bold; margin-bottom:8px;">ملاحظات إضافية:</label>
+                        <textarea style="width:100%; padding:12px; border:1px solid #e2e8f0; border-radius:8px;" rows="3" placeholder="أدخل أي ملاحظات أخرى...">يرجى التواصل معي عبر الواتساب.</textarea>
+                    </div>
+                </div>
+
+                <div class="service-specific-note">
+                    <div class="terms-content"><strong>تعليمات إضافية:</strong><br>سيتم مراجعة طلبك خلال 48 ساعة عمل.</div>
+                </div>
+                <div class="terms-acceptance-box">
+                    <label><input type="checkbox" checked> <span>أقر أنا مقدم الطلب بصحة البيانات المدخلة والمسترجعة من حسابي، وأوافق على معالجة الطلب إلكترونياً.</span></label>
+                </div>
+                <div class="confirmation-footer">
+                    <button class="button primary large">تأكيد وإرسال الطلب الآن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

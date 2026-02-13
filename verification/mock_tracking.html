@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracking Result Mock</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background: #f0f2f5; padding: 40px; font-family: system-ui, -apple-system, sans-serif; }
+        .services-container { max-width: 900px; margin: 0 auto; }
+        .dashicons { font-family: sans-serif !important; }
+        .dashicons-admin-users::before { content: "👥"; }
+        .dashicons-clipboard::before { content: "📋"; }
+        .dashicons-edit::before { content: "📝"; }
+        .dashicons-backup::before { content: "🔄"; }
+    </style>
+</head>
+<body>
+    <div class="services-container">
+        <div class="tracking-result-card">
+            <div class="tracking-result-header">
+                <h4>تفاصيل الطلب: #20052024001</h4>
+                <span class="status-badge pending">قيد الانتظار</span>
+            </div>
+            
+            <div class="tracking-grid">
+                <div class="tracking-info-section">
+                    <h5><span class="dashicons dashicons-admin-users"></span> بيانات مقدم الطلب</h5>
+                    <div class="info-row">
+                        <strong>الاسم:</strong> <span>محمد أحمد علي</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>رقم الهاتف:</strong> <span>01012345678</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>الفرع المختص:</strong> <span>فرع القاهرة</span>
+                    </div>
+                </div>
+                
+                <div class="tracking-info-section">
+                    <h5><span class="dashicons dashicons-clipboard"></span> بيانات الخدمة</h5>
+                    <div class="info-row">
+                        <strong>نوع الخدمة:</strong> <span>طلب إصدار رخصة جديدة</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>تاريخ التقديم:</strong> <span>2024-05-20 14:30</span>
+                    </div>
+                </div>
+
+                <div class="tracking-info-section" style="grid-column: 1 / -1; margin-top: 10px; border-top: 1px solid #f1f5f9; padding-top: 20px;">
+                    <h5><span class="dashicons dashicons-edit"></span> بيانات إضافية مقدمة</h5>
+                    <div class="info-row">
+                        <strong>عنوان الشكوى:</strong> <span style="display:block; margin-top:5px; background:#f8fafc; padding:10px; border-radius:5px;">تأخر في إصدار البطاقة</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>تفاصيل الشكوى:</strong> <span style="display:block; margin-top:5px; background:#f8fafc; padding:10px; border-radius:5px;">لقد قمت بالتقديم منذ أكثر من شهر ولم تصلني البطاقة حتى الآن.</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>ملاحظات:</strong> <span style="display:block; margin-top:5px; background:#f8fafc; padding:10px; border-radius:5px;">يرجى التواصل معي عبر الواتساب.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tracking-history-section">
+                <h5><span class="dashicons dashicons-backup"></span> سجل تحديثات الطلب</h5>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content" style="flex-direction:column; align-items:flex-start;">
+                            <div style="display:flex; justify-content:space-between; width:100%;">
+                                <strong>قيد الانتظار</strong>
+                                <small>2024-05-20 14:30</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
