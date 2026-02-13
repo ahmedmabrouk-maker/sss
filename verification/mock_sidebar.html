@@ -1,70 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>Services Sidebar Mock</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body { background: #f0f2f5; padding: 40px; font-family: system-ui, -apple-system, sans-serif; }
-        .services-container { max-width: 1200px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; }
-        :root { --ast-global-color-0: #007bff; --ast-global-color-3: #333; }
-        .dashicons { font-family: sans-serif !important; }
-        .dashicons-search::before { content: "🔍"; }
-        .dashicons-id-alt::before { content: "🆔"; }
-    </style>
-</head>
-<body>
-    <div id="services-container" class="services-container">
-        
-        <div id="tracking-container" class="tracking-section gray-bg">
-            <div class="tracking-header">
-                <h3>تتبع طلبك</h3>
-                <p>أدخل كود التأكيد الخاص بك لمتابعة حالة الطلب</p>
-            </div>
-            <form id="service-tracking-form" class="tracking-form">
-                <div class="tracking-container-row">
-                    <input type="text" placeholder="أدخل كود التتبع الخاص بك" value="2005202414001">
-                    <button type="submit" class="button primary wider-btn">تتبع الآن</button>
-                </div>
-            </form>
-            <p class="tracking-note-small">يمكنكم استخدام كود التتبع المكون من 13 رقماً لمعرفة حالة طلبكم والمرحلة التي وصل إليها حالياً.</p>
-        </div>
-
-        <div class="services-layout-wrapper">
-            <aside class="services-sidebar">
-                <div class="services-filter">
-                    <h4 class="filter-title">تصنيفات الخدمات</h4>
-                    <button class="filter-btn active">الكل</button>
-                    <button class="filter-btn">عضوية</button>
-                    <button class="filter-btn">تراخيص</button>
-                    <button class="filter-btn">تسجيل</button>
-                </div>
-            </aside>
-
-            <div id="services-list" class="services-grid">
-                <div class="service-box">
-                    <div class="service-box-icon">
-                        <span class="dashicons dashicons-id-alt"></span>
-                    </div>
-                    <h3>طلب إصدار رخصة جديدة</h3>
-                    <button class="button secondary">طلب الخدمة</button>
-                </div>
-                <div class="service-box">
-                    <div class="service-box-icon">
-                        <span class="dashicons dashicons-id-alt"></span>
-                    </div>
-                    <h3>طلب إصدار عضوية جديدة</h3>
-                    <button class="button secondary">طلب الخدمة</button>
-                </div>
-                <div class="service-box">
-                    <div class="service-box-icon">
-                        <span class="dashicons dashicons-id-alt"></span>
-                    </div>
-                    <h3>إصدار شهادة خبرة</h3>
-                    <button class="button secondary">طلب الخدمة</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
